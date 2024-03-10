@@ -1,0 +1,96 @@
+/fill 1203 77 535
+
+/scoreboard objectives add money.teeth dummy
+
+/execute as @a store result score @s money.teeth run clear @s minecraft:nether_star 0
+
+/execute unless block 1203 77 535 chest{Items:[{id:"pixelmon:gold_teeth"}]} if score @p money.teeth matches 1.. run clear @p minecraft:nether_star 1
+
+/execute unless block 1203 77 535 chest{Items:[{id:"pixelmon:gold_teeth"}]} unless score @p money.teeth matches 1.. run clear @p pixelmon:gold_teeth 1
+
+/replaceitem block 1203 77 535 container.13 pixelmon:gold_teeth 1
+
+
+
+/fill 1199 77 535
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1199 77 535 chest{Items:[{id:"pixelmon:waterdude_wishing_piece"}]} if score @p money.wishing matches 3.. run clear @p pixelmon:gold_teeth 3
+
+/execute unless block 1199 77 535 chest{Items:[{id:"pixelmon:waterdude_wishing_piece"}]} unless score @p money.wishing matches 3.. run clear @p pixelmon:waterdude_wishing_piece 1
+
+/replaceitem block 1199 77 535 container.13 pixelmon:waterdude_wishing_piece 1
+
+
+
+/fill 1195 77 535
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1195 77 535 chest{Items:[{id:"pixelmon:wishing_piece"}]} if score @p money.wishing matches 1.. run clear @p pixelmon:gold_teeth 1
+
+/execute unless block 1195 77 535 chest{Items:[{id:"pixelmon:wishing_piece"}]} unless score @p money.wishing matches 1.. run clear @p pixelmon:wishing_piece 1
+
+/replaceitem block 1195 77 535 container.13 pixelmon:wishing_piece 1
+
+
+
+/fill 1195 77 535
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1191 77 535 chest{Items:[{id:"pixelmon:diamond_hourglass"}]} if score @p money.wishing matches 3.. run clear @p pixelmon:gold_teeth 3
+
+/execute unless block 1191 77 535 chest{Items:[{id:"pixelmon:diamond_hourglass"}]} unless score @p money.wishing matches 3.. run clear @p pixelmon:diamond_hourglass 1
+
+/replaceitem block 1191 77 535 container.13 pixelmon:diamond_hourglass 1
+
+
+
+fill 1187 77 535
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1187 77 535 chest{Items:[{id:"pixelmon:mint_modest"}]} if score @p money.wishing matches 1.. run clear @p pixelmon:gold_teeth 1
+
+/execute unless block 1187 77 535 chest{Items:[{id:"pixelmon:mint_modest"}]} unless score @p money.wishing matches 1.. run clear @p pixelmon:mint_modest 1
+
+/replaceitem block 1187 77 535 container.13 pixelmon:mint_modest 1
+
+
+
+/fill 1183 77 535
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1183 77 535 chest{Items:[{id:"pixelmon:mint_adamant"}]} if score @p money.wishing matches 1.. run clear @p pixelmon:gold_teeth 1
+
+/execute unless block 1183 77 535 chest{Items:[{id:"pixelmon:mint_adamant"}]} unless score @p money.wishing matches 1.. run clear @p pixelmon:mint_adamant 1
+
+/replaceitem block 1183 77 535 container.13 pixelmon:mint_adamant 1
+
+
+
+/fill 1206 71 498
+
+/scoreboard objectives add money.wishing dummy
+
+/execute as @a store result score @s money.wishing run clear @s pixelmon:gold_teeth 0
+
+/execute unless block 1206 71 498 chest{Items:[{id:"pixelmon:gold_hourglass"}]} if score @p money.wishing matches 1.. run clear @p pixelmon:gold_teeth 1
+
+/execute unless block 1206 71 498 chest{Items:[{id:"pixelmon:gold_hourglass"}]} unless score @p money.wishing matches 1.. run clear @p pixelmon:gold_hourglass 1
+
+/replaceitem block 1206 71 498 container.13 pixelmon:gold_hourglass 1
+

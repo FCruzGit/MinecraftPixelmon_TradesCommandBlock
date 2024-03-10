@@ -1,0 +1,21 @@
+/fill 1206 71 493
+
+/execute as @a store result score @s money.diamond run clear @s diamond 0
+
+/execute unless block 1206 71 493 chest{Items:[{id:"pixelmon:master_ball"}]} if score @p money.diamond matches 250.. run clear @p diamond 250
+
+/execute unless block 1206 71 493 chest{Items:[{id:"pixelmon:master_ball"}]} unless score @p money.diamond matches 250.. run clear @p pixelmon:master_ball 1
+
+/replaceitem block 1206 71 493 container.13 pixelmon:master_ball 1
+
+
+/fill 142 70 -714
+
+/execute as @a store result score @s money run clear @s iron_ingot 0
+
+/execute unless block 1206 71 493 chest{Items:[{id:"pixelmon:platinum_ingot"}]} if score @p money matches 2.. run clear @p iron_ingot 2
+
+/execute unless block 1206 71 493 chest{Items:[{id:"pixelmon:platinum_ingot"}]} unless score @p money matches 2.. run clear @p pixelmon:platinum_ingot 1
+
+/replaceitem block 1206 71 493 container.13 pixelmon:platinum_ingot 1
+

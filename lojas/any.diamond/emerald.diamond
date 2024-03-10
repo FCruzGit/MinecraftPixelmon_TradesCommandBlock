@@ -1,0 +1,12 @@
+/fill 1187 71 540
+
+/scoreboard objectives add money.emr dummy
+
+/execute as @a store result score @s money.emr run clear @s emerald 0
+
+/execute unless block 1187 71 540 chest{Items:[{id:"minecraft:diamond"}]} if score @p money.emr matches 2.. run clear @p emerald 2
+
+/execute unless block 1187 71 540 chest{Items:[{id:"minecraft:diamond"}]} unless score @p money.emr matches 2.. run clear @p minecraft:diamond 1
+
+/replaceitem block 1187 71 540 container.13 minecraft:diamond 1
+

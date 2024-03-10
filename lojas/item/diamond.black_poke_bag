@@ -1,0 +1,7 @@
+/execute as @a store result score @s money run clear @s diamond 0
+
+/execute unless block 180 71 -665 chest{Items:[{id:"pixelmon:black_poke_bag"}]} if score @p money matches 3.. run clear @p diamond 3
+
+/execute unless block 180 71 -665 chest{Items:[{id:"pixelmon:black_poke_bag"}]} unless score @p money matches 3.. run clear @p pixelmon:black_poke_bag 1
+
+/replaceitem block 180 71 -665 container.13 pixelmon:black_poke_bag 1

@@ -1,0 +1,10 @@
+/fill 1199 71 540
+
+/execute as @a store result score @s money.bm run clear @s pixelmon:big_mushroom 0
+
+/execute unless block 1199 71 540 chest{Items:[{id:"minecraft:diamond"}]} if score @p money.bm matches 1.. run clear @p pixelmon:big_mushroom 1
+
+/execute unless block 1199 71 540 chest{Items:[{id:"minecraft:diamond"}]} unless score @p money.bm matches 1.. run clear @p minecraft:diamond 1
+
+/replaceitem block 1199 71 540 container.13 minecraft:diamond 1
+

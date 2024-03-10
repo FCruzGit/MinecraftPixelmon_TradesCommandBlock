@@ -1,0 +1,9 @@
+/execute as @a store result score @s money.diamond run clear @s diamond 0
+
+/execute unless block 1227 71 535 chest{Items:[{id:"pixelmon:lucky_egg"}]} if score @p money.diamond matches 15.. run clear @p diamond 15
+
+/execute unless block 1227 71 535 chest{Items:[{id:"pixelmon:lucky_egg"}]} unless score @p money.diamond matches 15.. run clear @p pixelmon:lucky_egg 1
+
+/replaceitem block 1227 71 535 container.13 pixelmon:lucky_egg 1
+
+/scoreboard objectives add money.diamond dummy

@@ -1,0 +1,49 @@
+/execute as @a store result score @s money.diamond run clear @s diamond 0
+
+/execute unless block 1235 71 540 chest{Items:[{id:"pixelmon:dream_ball"}]} if score @p money.diamond matches 1.. run clear @p diamond 1
+
+/execute unless block 1235 71 540 chest{Items:[{id:"pixelmon:dream_ball"}]} unless score @p money.diamond matches 1.. run clear @p pixelmon:dream_ball 1
+
+/replaceitem block 1235 71 540 container.13 pixelmon:dream_ball 1
+
+
+
+/scoreboard objectives add money.ball dummy
+
+/fill 1235 71 535
+
+/execute as @a store result score @s money.ball run clear @s diamond 0
+
+/execute unless block 1235 71 535 chest{Items:[{id:"pixelmon:dive_ball"}]} if score @p money.ball matches 1.. run clear @p diamond 1
+
+/execute unless block 1235 71 535 chest{Items:[{id:"pixelmon:dive_ball"}]} unless score @p money.ball matches 1.. run clear @p pixelmon:dive_ball 1
+
+/replaceitem block 1235 71 535 container.13 pixelmon:dive_ball 1
+
+
+
+/scoreboard objectives add money.ball dummy
+
+/fill 1231 71 535
+
+/execute as @a store result score @s money.ball run clear @s diamond 0
+
+/execute unless block 1231 71 535 chest{Items:[{id:"pixelmon:heavy_ball"}]} if score @p money.ball matches 1.. run clear @p diamond 1
+
+/execute unless block 1231 71 535 chest{Items:[{id:"pixelmon:heavy_ball"}]} unless score @p money.ball matches 1.. run clear @p pixelmon:heavy_ball 1
+
+/replaceitem block 1231 71 535 container.13 pixelmon:heavy_ball 1
+
+
+
+/scoreboard objectives add money.ball dummy
+
+/fill 1227 71 535
+
+/execute as @a store result score @s money.ball run clear @s diamond 0
+
+/execute unless block 1227 71 535 chest{Items:[{id:"pixelmon:dusk_ball"}]} if score @p money.ball matches 1.. run clear @p diamond 1
+
+/execute unless block 1227 71 535 chest{Items:[{id:"pixelmon:dusk_ball"}]} unless score @p money.ball matches 1.. run clear @p pixelmon:dusk_ball 1
+
+/replaceitem block 1227 71 535 container.13 pixelmon:dusk_ball 1

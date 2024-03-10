@@ -1,0 +1,128 @@
+/scoreboard objectives add money.revive dummy
+
+/fill 1203 71 535
+
+/execute as @a store result score @s money.revive run clear @s minecraft:coal_block 0
+
+/execute unless block 1203 71 535 chest{Items:[{id:"pixelmon:max_revive"}]} if score @p money.revive matches 1.. run clear @p minecraft:coal_block 1
+
+/execute unless block 1203 71 535 chest{Items:[{id:"pixelmon:max_revive"}]} unless score @p money.revive matches 1.. run clear @p pixelmon:max_revive 1
+
+/replaceitem block 1203 71 535 container.13 pixelmon:max_revive 1
+
+
+/scoreboard objectives add money.restore dummy
+
+/fill 1199 71 535
+
+/execute as @a store result score @s money.restore run clear @s minecraft:coal_block 0
+
+/execute unless block 1199 71 535 chest{Items:[{id:"pixelmon:full_restore"}]} if score @p money.restore matches 2.. run clear @p minecraft:coal_block 2
+
+/execute unless block 1199 71 535 chest{Items:[{id:"pixelmon:full_restore"}]} unless score @p money.restore matches 2.. run clear @p pixelmon:full_restore 1
+
+/replaceitem block 1199 71 535 container.13 pixelmon:full_restore 1
+
+
+/scoreboard objectives add money.heal dummy
+
+/fill 1195 71 535
+
+/execute as @a store result score @s money.heal run clear @s minecraft:coal_block 0
+
+/execute unless block 1195 71 535 chest{Items:[{id:"pixelmon:max_potion"}]} if score @p money.heal matches 1.. run clear @p minecraft:coal_block 1
+
+/execute unless block 1195 71 535 chest{Items:[{id:"pixelmon:max_potion"}]} unless score @p money.heal matches 1.. run clear @p pixelmon:max_potion 1
+
+/replaceitem block 1195 71 535 container.13 pixelmon:max_potion 1
+
+
+/scoreboard objectives add money.elixir dummy
+
+/fill 1191 71 535
+
+/execute as @a store result score @s money.elixir run clear @s minecraft:coal_block 0
+
+/execute unless block 1191 71 535 chest{Items:[{id:"pixelmon:max_elixir"}]} if score @p money.elixir matches 3.. run clear @p minecraft:coal_block 3
+
+/execute unless block 1191 71 535 chest{Items:[{id:"pixelmon:max_elixir"}]} unless score @p money.elixir matches 3.. run clear @p pixelmon:max_elixir 1
+
+/replaceitem block 1191 71 535 container.13 pixelmon:max_elixir 1
+
+
+
+/scoreboard objectives add money.ppmax dummy
+
+/fill 1187 71 535
+
+/execute as @a store result score @s money.ppmax run clear @s minecraft:coal_block 0
+
+/execute unless block 1187 71 535 chest{Items:[{id:"pixelmon:pp_max"}]} if score @p money.ppmax matches 16.. run clear @p minecraft:coal_block 16
+
+/execute unless block 1187 71 535 chest{Items:[{id:"pixelmon:pp_max"}]} unless score @p money.ppmax matches 16.. run clear @p pixelmon:pp_max 1
+
+/replaceitem block 1187 71 535 container.13 pixelmon:pp_max 1
+
+
+
+/scoreboard objectives add money.f_heal dummy
+
+/fill 1183 71 535
+
+/execute as @a store result score @s money.f_heal run clear @s minecraft:coal_block 0
+
+/execute unless block 1183 71 535 chest{Items:[{id:"pixelmon:full_heal"}]} if score @p money.f_heal matches 1.. run clear @p minecraft:coal_block 1
+
+/execute unless block 1183 71 535 chest{Items:[{id:"pixelmon:full_heal"}]} unless score @p money.f_heal matches 1.. run clear @p pixelmon:full_heal 1
+
+/replaceitem block 1183 71 535 container.13 pixelmon:full_heal 1
+
+
+
+/scoreboard objectives add money.herb dummy
+
+/fill 1195 77 540
+
+/execute as @a store result score @s money.herb run clear @s minecraft:coal_block 0
+
+/execute unless block 1195 77 540 chest{Items:[{id:"pixelmon:white_herb"}]} if score @p money.herb matches 1.. run clear @p minecraft:coal_block 1
+
+/execute unless block 1195 77 540 chest{Items:[{id:"pixelmon:white_herb"}]} unless score @p money.herb matches 1.. run clear @p pixelmon:white_herb 1
+
+/replaceitem block 1195 77 540 container.13 pixelmon:white_herb 1
+
+
+
+/fill 1191 77 540
+
+/execute as @a store result score @s money.herb run clear @s minecraft:coal_block 0
+
+/execute unless block 1191 77 540 chest{Items:[{id:"pixelmon:power_herb"}]} if score @p money.herb matches 1.. run clear @p minecraft:coal_block 1
+
+/execute unless block 1191 77 540 chest{Items:[{id:"pixelmon:power_herb"}]} unless score @p money.herb matches 1.. run clear @p pixelmon:power_herb 1
+
+/replaceitem block 1191 77 540 container.13 pixelmon:power_herb 1
+
+
+
+/fill 1183 77 540
+
+/execute as @a store result score @s money.diamond run clear @s minecraft:diamond 0
+
+/execute unless block 1183 77 540 chest{Items:[{id:"pixelmon:xl_exp_candy"}]} if score @p money.diamond matches 16.. run clear @p minecraft:diamond 16
+
+/execute unless block 1183 77 540 chest{Items:[{id:"pixelmon:xl_exp_candy"}]} unless score @p money.diamond matches 16.. run clear @p pixelmon:xl_exp_candy 1
+
+/replaceitem block 1183 77 540 container.13 pixelmon:xl_exp_candy 1
+
+
+
+/fill 1187 77 540
+
+/execute as @a store result score @s money.diamond run clear @s minecraft:diamond 0
+
+/execute unless block 1187 77 540 chest{Items:[{id:"pixelmon:lucky_egg"}]} if score @p money.diamond matches 16.. run clear @p minecraft:diamond 16
+
+/execute unless block 1187 77 540 chest{Items:[{id:"pixelmon:lucky_egg"}]} unless score @p money.diamond matches 16.. run clear @p pixelmon:lucky_egg 1
+
+/replaceitem block 1187 77 540 container.13 pixelmon:lucky_egg 1

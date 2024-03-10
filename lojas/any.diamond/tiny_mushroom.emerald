@@ -1,0 +1,12 @@
+/fill 1195 71 540
+
+/scoreboard objectives add money.tm dummy
+
+/execute as @a store result score @s money.tm run clear @s pixelmon:tiny_mushroom 0
+
+/execute unless block 1195 71 540 chest{Items:[{id:"minecraft:emerald"}]} if score @p money.tm matches 1.. run clear @p pixelmon:tiny_mushroom 1
+
+/execute unless block 1195 71 540 chest{Items:[{id:"minecraft:emerald"}]} unless score @p money.tm matches 1.. run clear @p minecraft:emerald 1
+
+/replaceitem block 1195 71 540 container.13 minecraft:emerald 1
+

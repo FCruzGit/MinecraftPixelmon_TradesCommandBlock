@@ -1,0 +1,11 @@
+1203 71 540
+
+/scoreboard objectives add money.gold dummy
+
+/execute as @a store result score @s money.gold run clear @s minecraft:gold_ingot 0
+
+/execute unless block 1203 71 540 chest{Items:[{id:"pixelmon:rare_candy"}]} if score @p money.gold matches 4.. run clear @p minecraft:gold_ingot 4
+
+/execute unless block 1203 71 540 chest{Items:[{id:"pixelmon:rare_candy"}]} unless score @p money.gold matches 4.. run clear @p pixelmon:rare_candy 1
+
+/replaceitem block 1203 71 540 container.13 pixelmon:rare_candy 1

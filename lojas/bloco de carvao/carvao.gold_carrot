@@ -1,0 +1,11 @@
+/execute as @a store result score @s money.gc run clear @s coal 0
+
+/execute unless block 179 72 -692 chest{Items:[{id:"minecraft:golden_carrot"}]} if score @p money.gc matches 2.. run clear @p coal 2
+
+/execute unless block 179 72 -692 chest{Items:[{id:"minecraft:golden_carrot"}]} unless score @p money.gc matches 2.. run clear @p minecraft:golden_carrot 1
+
+/replaceitem block 179 72 -692 container.13 minecraft:golden_carrot 1
+
+
+
+/scoreboard objectives add money.gc dummy
