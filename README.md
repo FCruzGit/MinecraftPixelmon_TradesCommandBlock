@@ -1,8 +1,8 @@
 COMANDOS PARA BLOCOS DE COMANDO (CB) MINECRAFT PIXELMON
 
-![img.png](Assets/img.png)
+![img.png](Assets/chestTrade.png)
 
-![img.png](img.png)
+![img.png](Assets/buttonTrade.png)
 
 LÓGICA BASICA:
 
